@@ -13,8 +13,7 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "prepare": "npm run build"
+    "test": "vitest run"
   },
   "keywords": [
     "opencode",

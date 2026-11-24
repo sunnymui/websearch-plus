@@ -66,9 +66,10 @@ Run this from the repository:
 ```sh
 cd ~/Documents/websearch-plus
 npm install
+npm run build
 ```
 
-This installs dependencies and builds `dist/index.js`.
+This installs dependencies and builds `dist/index.js`. The repository also includes a built `dist/`, so Git installs don't need a build step. After changing the source, run `npm run build` and commit the updated `dist/`.
 
 Then add the local path to `~/.config/opencode/opencode.json`:
 
