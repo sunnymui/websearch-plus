@@ -21,7 +21,7 @@
     "opencode-plugin",
     "websearch"
   ],
-  "author": "",
+  "author": "Sunny Mui",
   "license": "MIT",
   "type": "module",
   "dependencies": {
