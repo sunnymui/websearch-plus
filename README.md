@@ -46,8 +46,8 @@ Choose one:
 1. Restart OpenCode:
 
    ```sh
-   opencode2 service restart
-   opencode2 service status
+   opencode service restart
+   opencode service status
    ```
 
 2. Ask OpenCode to call `websearch_plus_status`. It should show the configured providers.
@@ -90,7 +90,7 @@ For example:
 }
 ```
 
-Do not use `opencode2 plugin add` for a local directory.
+Do not use `opencode plugin add` for a local directory.
 
 ### Install from a Git repository <a name="git-repository"></a>
 
@@ -99,7 +99,7 @@ Git install is an alternative to the local-path setup. Do not use both at the sa
 #### GitHub
 
 ```sh
-opencode2 plugin add 'github:sunnymui/websearch-plus#main'
+opencode plugin add 'github:sunnymui/websearch-plus#main'
 ```
 
 ## What it does <a name="what-it-does"></a>
@@ -159,7 +159,7 @@ Use websearch to find the official OpenCode V2 documentation and cite the source
 From the command line:
 
 ```sh
-opencode2 run --agent build \
+opencode run --agent build \
   "Use websearch to find the official OpenCode V2 documentation and cite the source."
 ```
 
@@ -316,7 +316,7 @@ Brave, Nimble, TinyFish, Bright Data, and ZenRows are opt-in. Add their IDs to `
 ## Troubleshooting <a name="troubleshooting"></a>
 
 ```sh
-opencode2 service status
+opencode service status
 tail -n 200 ~/.local/share/opencode/log/opencode.log
 ```
 

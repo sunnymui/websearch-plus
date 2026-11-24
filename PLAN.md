@@ -386,7 +386,7 @@ Persist only operational metadata in plugin storage: provider, time, auth mode, 
 2. Test fallback after a controlled timeout, `403`, `429`, `5xx`, and empty result set.
 3. Confirm Firecrawl is never called after it is removed from `providers`.
 4. Confirm no credential or query content appears in status, plugin storage, or logs.
-5. Enable globally, restart the service, and verify with `opencode2 run` and the TUI.
+5. Enable globally, restart the service, and verify with `opencode run` and the TUI.
 
 ## Rollback
 
@@ -400,7 +400,7 @@ Persist only operational metadata in plugin storage: provider, time, auth mode, 
 3. Restart the service:
 
    ```sh
-   opencode2 service restart
+   opencode service restart
    ```
 
 ## References
