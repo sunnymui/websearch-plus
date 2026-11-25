@@ -66,10 +66,10 @@ Run this from the repository:
 ```sh
 cd ~/Documents/websearch-plus
 npm install
-npm run build
+npm run compile
 ```
 
-This installs dependencies and builds `dist/index.js`. The repository also includes a built `dist/`, so Git installs don't need a build step. After changing the source, run `npm run build` and commit the updated `dist/`.
+This installs dependencies and builds `dist/index.js`. The repository also includes a built `dist/`, so Git installs don't need a build step. After changing the source, run `npm run compile` and commit the updated `dist/`.
 
 Then add the local path to `~/.config/opencode/opencode.json`:
 
@@ -324,7 +324,7 @@ tail -n 200 ~/.local/share/opencode/log/opencode.log
 If WebSearch+ is not active:
 
 1. Confirm the plugin path is correct.
-2. Run `npm run build` in the plugin repository.
+2. Run `npm run compile` in the plugin repository.
 3. Restart the OpenCode service.
 4. Ask the agent to call `websearch_plus_status`.
 5. Ask the agent to call `websearch_plus_history` after a search to inspect the selected provider and fallback attempts.
@@ -347,7 +347,7 @@ Brave and Nimble `/connect` entries rely on an OpenCode V2 core behavior: `Integ
 npm install
 npm run typecheck
 npm test
-npm run build
+npm run compile
 ```
 
 See [PLAN.md](./PLAN.md) for the technical design and rollout plan.

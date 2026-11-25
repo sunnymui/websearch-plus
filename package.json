@@ -11,7 +11,7 @@
     "PLAN.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "compile": "tsc",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
