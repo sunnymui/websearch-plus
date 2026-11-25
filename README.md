@@ -69,7 +69,7 @@ npm install
 npm run compile
 ```
 
-This installs dependencies and builds `dist/index.js`. The repository also includes a built `dist/`, so Git installs don't need a build step. After changing the source, run `npm run compile` and commit the updated `dist/`.
+This installs dependencies and compiles the source into `dist/index.js`. The repository also includes a built `dist/`, so Git installs don't need a build step. After changing the source, run `npm run compile` and commit the updated `dist/`.
 
 Then add the local path to `~/.config/opencode/opencode.json`:
 
