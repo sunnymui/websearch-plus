@@ -103,6 +103,10 @@ Git install is an alternative to the local-path setup. Do not use both at the sa
 opencode plugin add 'github:sunnymui/websearch-plus#main'
 ```
 
+This adds the plugin to the `plugins` list in `~/.config/opencode/opencode.json`. It was checked on OpenCode 2.4.1: the plugin loads and `websearch_plus_status` and `websearch` work. The repository includes a built `dist/`, so no build runs during install.
+
+`opencode plugin list` may not show Git-installed plugins even when they are loaded. Use `websearch_plus_status` to confirm.
+
 ## What it does <a name="what-it-does"></a>
 
 - Uses Exa, Tavily, Parallel, TinyFish, Firecrawl, Brave, Nimble, Bright Data, and ZenRows.
