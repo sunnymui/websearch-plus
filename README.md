@@ -121,17 +121,17 @@ This adds the plugin to the `plugins` list in `~/.config/opencode/opencode.json`
 
 ## Search API Providers <a name="search-api-providers"></a>
 
-| Provider | ID | Key setup | API key needed? |
-| --- | --- | --- | --- |
-| Exa | `exa` | `/connect` | No — tries a keyless request, then the next configured provider. |
-| Tavily | `tavily` | `/connect` | No — tries a keyless request, then the next configured provider. |
-| Parallel | `parallel` | `/connect` | No — tries a keyless request, then the next configured provider. |
-| TinyFish Search | `tinyfish` | WebSearch+ entry in `/connect` | Yes |
-| Firecrawl | `firecrawl` | `/connect` | No — blocked on some corporate networks. |
-| Brave LLM Context | `brave` | WebSearch+ entry in `/connect` | Yes |
-| Nimble Search | `nimble` | WebSearch+ entry in `/connect` | Yes |
-| Bright Data | `brightdata` | WebSearch+ entry in `/connect` | Yes — Google search scraper |
-| ZenRows | `zenrows` | WebSearch+ entry in `/connect` | Yes — Google search scraper |
+| Provider | ID | Key setup | API key needed? | Get an API key |
+| --- | --- | --- | --- | --- |
+| Exa | `exa` | `/connect` | No — tries a keyless request, then the next configured provider. | [dashboard.exa.ai/api-keys](https://dashboard.exa.ai/api-keys) |
+| Tavily | `tavily` | `/connect` | No — tries a keyless request, then the next configured provider. | [app.tavily.com](https://app.tavily.com) (free: 1,000 credits a month) |
+| Parallel | `parallel` | `/connect` | No — tries a keyless request, then the next configured provider. | [platform.parallel.ai](https://platform.parallel.ai) |
+| TinyFish Search | `tinyfish` | WebSearch+ entry in `/connect` | Yes | [agent.tinyfish.ai/api-keys](https://agent.tinyfish.ai/api-keys) |
+| Firecrawl | `firecrawl` | `/connect` | No — blocked on some corporate networks. | [firecrawl.dev/app/api-keys](https://www.firecrawl.dev/app/api-keys) |
+| Brave LLM Context | `brave` | WebSearch+ entry in `/connect` | Yes | [api-dashboard.search.brave.com](https://api-dashboard.search.brave.com/register). Activate a plan first (a credit card is required; it includes $5 in free credits each month), then create a key under API Keys. |
+| Nimble Search | `nimble` | WebSearch+ entry in `/connect` | Yes | [online.nimbleway.com](https://online.nimbleway.com) (sign in and find your API key in the dashboard) |
+| Bright Data | `brightdata` | WebSearch+ entry in `/connect` | Yes — Google search scraper | [Account settings](https://brightdata.com/cp/setting/users) for the key. Also create a SERP API zone; its name is the `apiName` setting. |
+| ZenRows | `zenrows` | WebSearch+ entry in `/connect` | Yes — Google search scraper | Sign up at [zenrows.com](https://www.zenrows.com), then copy the key from the dashboard. See the [setup guide](https://docs.zenrows.com/first-steps/getting-started-guide). |
 
 Keyless access depends on the provider and network. Do not depend on it for production use.
 
